@@ -1,0 +1,41 @@
+------------------------------------------------------------------------------------------------------//Lesson 1//
+------------------------------------------------------------------------------------------------//Main Hands-On project//
+function totalPrice(sqEdge, pricePerSqFt) 
+    {
+        let totalSqFt = sqEdge * sqEdge;
+        let calculatedPrice = totalSqFt * pricePerSqFt;
+        console.log("total square feet = " + totalSqFt);
+        console.log("total calculated price = " + calculatedPrice);
+    }
+totalPrice(10, 100);
+
+---------------------------------------------------------------------------------------------------//Stretch Goal #1//
+let day = 16 + ", ";
+let month = "September" + " ";
+let year = 1992;
+let myBirthDay = month.concat(day, year);
+console.log(myBirthDay);
+
+--------------------------------------------------------------------------------------------------//Stretch Goal #2//
+let age = 15;
+let notPermited = true;
+let permission;
+if (age < 10)
+    {
+        notPermited = true;
+    }
+else if (age < 15)
+    {
+        notPermited = false;
+        permission = "You may attend only with a parent";
+    }
+else if (age < 18)
+    {
+        notPermited = false;
+        permission = "You may attend with anyone over the age of 18";
+    }
+else if (age >= 18)
+    {
+        notPermited = false;
+        permission = "Enjoy the show!";
+    }
